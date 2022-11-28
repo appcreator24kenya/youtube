@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin:0;
+    padding:0;
+    outline:none;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body {
+    overflow-y: hidden;
+}
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px;
+    width: 100%;
+    height:60px;
+    top:0;
+    position: fixed;
+    background:white;
+    z-index: 100;
+    overflow: hidden;
+}
+.header .left {
+   align-items: center;
+   display: flex;
+}
+.left i{
+    font: size 20px;
+    margin-right :20px;
+} 
+.left img{
+    width: 70px;
+    height: 30px;
+}
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.middle .search {
+    width: 600px;
+    height: 40px;
+    border:none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.middle input{
+    width: 550px;
+    height: 40px;
+    outline:none;
+    border: 1px solid #989898;
+    align-self:center;
+    font-size: 16px;
+   
+}
+.middle .search i {
+   padding: 10px ;
+   border: 1px solid #989898;
+   width: 40px;
+}
+.middle .search i:hover {
+    background: #E0E0E0;
+}
+.middle .microphone {
+    background: #E0E0E0;
+    border-radius: 50%;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+}
+.middle .microphone i{
+    display: flex;
+    align-items: center;
+    background: #E0E0E0;
+    border-radius: 50%;
+}
+.header .right {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.header .right i{
+    padding: 10px;
+    font-size: 20px;
+}
+.header .right .user{
+    font-size: 28px;
+    margin-left: 23px;
+}
+
+.video-wrapper {
+    display: flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    width: 100%;
+    height: 100vh;
+    padding:10px 20px 70px 20px;
+    margin-top: 60px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.video-wrapper .main-video {
+   width:65%;
+   height: 100vh;
+   display: block;
+   margin-right: 15px;
+   padding-top: 10px;
+}
+.main-video  video {
+    width:100%;
+    height: 499px;
+    background: black;
+}
+.hashtag {
+    color: blue;
+    font-size: 12px;
+    overflow: hidden;
+}
+.main-video .video-stats {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.video-stats .reaction {
+    align-items: center;
+}
+.video-stats .reaction i{
+    font-style: normal;
+    margin: 12px;
+    color:#282828;
+    cursor: pointer;
+}
+.reaction a {
+    color: black;
+}
+.user-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.user-info .user-details {
+    display: flex;
+    margin-top: 12px;
+}
+.user-details img {
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    border: 3px solid #F0F0F0;
+    cursor: pointer;
+}
+.user-details  .username {
+    margin-left: 13px;
+}
+.user-details  .username h4 {
+    font-size: 15px;
+}
+.user-details  .username span {
+    font-size: 14px;
+}
+.description {
+    width:600px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 22px;
+}
+.user-info .subscribe-btn {
+    margin-right: 10px;
+}
+.subscribe-btn button {
+    padding: 8px 16px;
+    background: red;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.comment-bar {
+    margin-top: 22px;
+}
+.comment-bar span {
+    display: flex;
+    align-items: center;
+}
+.comment-bar .add-comment {
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+    margin-bottom: 25px;
+}
+.add-comment img {
+    width:46px;
+    height:46px;
+    border-radius: 50%;
+    margin-right: 20px;
+    align-items: flex-start;
+}
+.add-comment input {
+    width: 600px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 6px;
+}
+.add-comment input:focus {
+    width:900px;
+}
+.comment-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+.comment-list img {
+    width:46px;
+    height:46px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.comment-list .feedback {
+    display: block;
+    align-items:center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.comment-list .feedback h5{
+    font-size: 15px;
+}
+.comment-list .reaction {
+    display: flex;
+    align-items: center;
+}
+.comment-list .reaction i {
+    padding-right:10px;
+    padding-top: 5px;
+    font-style: normal;
+}
+
+
+
+.video-wrapper .suggested-videos {
+    width:35%;
+    margin-top: 10px;
+    display: block;
+}
+.suggested-videos h3{
+    display: none;
+}
+.suggested-videos .other-videos {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    height:120px;
+    margin-bottom: 12px;
+}
+.other-videos .video-info {
+    display: block;
+    align-items:flex-start;
+    justify-content: flex-start;
+    height:120px;
+}
+.suggested-videos .other-videos img {
+    width: 232px;
+    height: 120px;
+    border-radius: 5px;
+    border: none;
+    background: #989898;
+    margin-right: 10px;
+}
+.other-videos i{
+    align-self: flex-start;
+    margin:0 5px;
+}
+.video-info h6 {
+    font-size: 13px;
+}
+.video-info span {
+    color:#696969 ;
+    font-size: 13px;
+}
+.video-info p {
+    color: #696969;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    * {
+        overflow: auto;
+    }
+    body {
+        overflow-y: auto;
+        width:100%;
+    }
+    .header {
+        width: 100%;
+        justify-content: space-between;
+        top:0;
+        position: fixed;
+        padding: 10px;
+    }
+    .left i{
+        font: size 20px;
+        margin-right :20px;
+    } 
+    .left img{
+        width: 70px;
+        height: 30px;
+    }
+    .middle  {
+        display:none;
+        border: none;
+
+    }
+    .right .rem{
+        display: none;
+    }
+    .header .right .user{
+        display: block;
+        font-size: 28px;
+        margin-left: 0px;
+    }
+
+
+
+    .video-wrapper {
+        width: 100%;
+        height:100vh;
+        margin-top:0;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        overflow:auto;
+    }
+    .video-wrapper .main-video {
+        display:flex;
+        flex-wrap: wrap;
+        width:100%;
+        height: auto;
+        overflow: hidden;
+        margin-top: 55px;
+        margin-right: 0px;
+    }
+    .main-video video {
+        width:100%;
+        height: 240px;
+        left:0px;
+        top:55px;
+        position: fixed;
+    }
+    .main-video  .hashtag   {
+        padding: 5px;
+        height:20px;
+        margin-top: 225px;
+    }
+    .main-video .video-name  {
+        padding: 5px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .video-stats {
+        flex-wrap: wrap;
+        padding: 5px;
+        margin-bottom:10px ;
+        overflow: hidden;
+        overflow: hidden;
+    }
+    .video-stats .views {
+        width: 100%;
+        display: block;
+        align-self: flex-start;
+        justify-content: flex-start;
+    }
+    .video-stats .reaction {
+        width:100%;
+        overflow: hidden;
+        justify-content:space-between;
+    }
+    .video-stats .reaction i{
+        font-style: normal;
+        font-size: 18px;
+        margin: 10px;
+        color:#282828;
+        cursor: pointer;
+    }
+    .video-stats .reaction a {
+        display: none;
+    }
+    .user-info {
+        width:100%;
+        margin-top: 0px;
+        padding:5px;
+        margin-bottom: 20px;
+    }
+    .main-video .description{
+        display: none;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+    .comment-bar {
+        display: none;
+        padding: 5px;
+        width: 100%;
+        height:200px;
+        margin-top: -10px;
+        overflow: hidden;
+    }
+
+    .video-wrapper .suggested-videos{
+        margin-top:20px;
+        width:100%;
+        padding:3px;
+    }
+    .other-videos .video-info {
+        display: block;
+        align-items:flex-start;
+        justify-content: flex-start;
+        height:120px;
+    }
+    .suggested-videos .other-videos img {
+        width: 200px;
+        height: 120px;
+        border-radius: 0px;
+        margin-right: 10px;
+    }
+    .suggested-videos h3 {
+        display: block;
+        margin-bottom: 5px;
+        overflow: hidden;
+    }
+    .other-videos .video-info i{
+        align-self: flex-start;
+        margin-right: 10px;
+    }
+
+}
